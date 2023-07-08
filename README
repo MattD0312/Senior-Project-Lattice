@@ -1,0 +1,25 @@
+Lattice
+
+---See currently running containers
+docker ps -a
+
+---See all images
+docker images
+
+---Restart a container
+docker restart [container_name]
+
+---Stop a container
+docker stop [container_name]
+
+---Remove an instance of a container (wipes all attached data unless a volume is configured)
+docker rm [container_name]
+
+---Start up entire environment (in a directory that contains a docker-compose.yml file)
+docker-compose up -d
+
+---Stop/Pull Down entire environment (stops and removes all containers present in docker-compose.yml)
+docker-compose down
+
+---Start up all database and system architecture Docker containers (custom script)
+./docker-compose-all.sh
